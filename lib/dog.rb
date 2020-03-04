@@ -38,5 +38,13 @@ class Dog
        self
     end
 
+    def self.create(attr)
+        new_dog = self.new(attr)
+        new_dog.save
+        new_dog
+
+    end
+
+
 
 end
